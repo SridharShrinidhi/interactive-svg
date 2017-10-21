@@ -1,0 +1,44 @@
+#left-eye,
+#right-eye {
+  transform: translateX(-10px);
+  -webkit-animation: moving 3s ease infinite alternate;
+  animation: moving 3s ease infinite alternate;
+}
+
+#bear:hover #left-ear {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  transform-origin: left top;
+  transition: all .5s linear;
+}
+
+#bear:hover #right-ear {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  transform-origin: left top;
+  transition: all .5s linear;
+}
+
+@-webkit-keyframes moving {
+
+  0% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
+
+}
+
+@keyframes moving {
+
+  0% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
+
+}
